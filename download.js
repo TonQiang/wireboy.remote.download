@@ -85,6 +85,7 @@ const fileStream = fs.createWriteStream(tmpFileSavePath).on('error', function (e
     
 });
 
+
 var sendEmail = function(sendFiles,patchIndex){
     let msg = createEmailMessage(path.basename(fileURL) + '_Part' + patchIndex + '', sendFiles);
     console.log('Send Mail Part_' + patchIndex + '   ' + path.basename(fileURL));
