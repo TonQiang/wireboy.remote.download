@@ -18,6 +18,9 @@ jobs:
             - name: Run
               run: npm install
               
+            - name: Install youtube-dl
+              run: npm install youtube-dl
+              
             - run: node download.js
               
               env:
